@@ -37,7 +37,7 @@ class MainContent extends Component {
         console.log(data)
         return (
             <div id="parentDiv"> 
-                <div id='mainContent'> <div id='counter'>/{data.length}</div>
+                <div id='mainContent'> <div id='counter'>{data[this.state.i].id}/{data.length}</div>
                     <div id="firstNameLast">{`${data[this.state.i].name.first} ${data[this.state.i].name.last}`}</div>
                     <div id='bornIn'><b>From:</b> {`${data[this.state.i].city}, ${data[this.state.i].country}`}</div>
                     <div id="employer"><b>Employer:</b> {data[this.state.i].employer}</div>
@@ -61,6 +61,7 @@ class MainContent extends Component {
 
         )
     }
+
 }
 
 export default MainContent
