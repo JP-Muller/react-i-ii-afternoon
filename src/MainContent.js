@@ -40,6 +40,7 @@ class MainContent extends Component {
                 <div id='mainContent'> <div id='counter'>{data[this.state.i].id}/{data.length}</div>
                     <div id="firstNameLast">{`${data[this.state.i].name.first} ${data[this.state.i].name.last}`}</div>
                     <div id='bornIn'><b>From:</b> {`${data[this.state.i].city}, ${data[this.state.i].country}`}</div>
+                    <div id="jobTitle"><b>Job Title:</b> {`${data[this.state.i].title}`}</div>
                     <div id="employer"><b>Employer:</b> {data[this.state.i].employer}</div>
 
                     <div id='favMovies'><b>Favorite Movies:</b> </div>
